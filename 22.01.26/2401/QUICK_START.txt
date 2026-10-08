@@ -1,0 +1,130 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                 ADAPTIVE THESIS GENERATOR - QUICK START GUIDE                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🚀 START THE APPLICATION (Choose One)
+
+  Windows Command Prompt:
+  $ start-dev.bat
+
+  Windows PowerShell:
+  $ .\start-dev.ps1
+
+  Manual (Terminal 1):
+  $ cd app
+  $ python api.py
+
+  Manual (Terminal 2):
+  $ cd thesis-frontend
+  $ npm run dev
+
+
+🌐 ACCESS THE APPLICATION
+
+  Frontend:        http://localhost:5173
+  Backend API:     http://localhost:8001
+  API Docs:        http://localhost:8001/docs
+
+
+📋 QUICK WORKFLOW
+
+  1. Start both services (see above)
+  2. Open http://localhost:5173 in browser
+  3. Fill in the thesis generation form:
+     - Degree (UG/Master/PhD)
+     - University name
+     - Discipline
+     - Research topic
+     - Target journal (optional)
+  4. Click "Generate Thesis"
+  5. View results
+
+
+🔧 TROUBLESHOOTING
+
+  Backend won't start?
+  → Check if port 8001 is available
+  → Install: pip install fastapi uvicorn
+
+  Frontend won't start?
+  → Check if Node.js is installed
+  → Install: cd thesis-frontend && npm install
+
+  Can't connect?
+  → Ensure backend started first
+  → Check http://localhost:8001 directly
+  → Look at browser console (F12) for errors
+
+
+📁 DIRECTORY STRUCTURE
+
+  app/
+  ├── api.py                 (FastAPI backend)
+  ├── agents/                (AI agents)
+  ├── config/                (Configuration)
+  └── models/                (Data models)
+
+  thesis-frontend/
+  ├── src/
+  │   ├── pages/Generate.jsx (Main form)
+  │   ├── styles/Generate.css
+  │   └── App.jsx
+  └── vite.config.js         (Proxy config)
+
+
+💡 USEFUL COMMANDS
+
+  View backend logs:          Check terminal 1 output
+  Hot reload frontend:        Automatic (watch mode)
+  Test API endpoint:          Visit http://localhost:8001/docs
+  Clear browser cache:        Ctrl+Shift+Delete in browser
+  Kill backend process:       Ctrl+C in terminal 1
+  Kill frontend process:      Ctrl+C in terminal 2
+
+
+✨ FEATURES
+
+  ✓ Multi-agent AI system
+  ✓ Automated thesis structure generation
+  ✓ Research paper search
+  ✓ Knowledge base integration (RAG)
+  ✓ Form validation
+  ✓ Error handling
+  ✓ Loading states
+  ✓ Result visualization
+
+
+🛠️ FILES YOU MIGHT EDIT
+
+  Frontend:
+  - thesis-frontend/src/pages/Generate.jsx
+  - thesis-frontend/src/styles/Generate.css
+
+  Backend:
+  - app/api.py
+  - app/agents/*.py
+
+
+📞 IMPORTANT NOTES
+
+  • Backend must start BEFORE frontend
+  • Keep both terminal windows open while developing
+  • Changes to frontend hot-reload automatically
+  • Changes to backend require restart
+  • Check browser console (F12) for client-side errors
+  • Check terminal output for server-side errors
+
+
+📚 ADDITIONAL RESOURCES
+
+  Setup Guide:              SETUP_GUIDE.md
+  Technical Details:        FRONTEND_BACKEND_CONNECTION.md
+  FastAPI Docs:             https://fastapi.tiangolo.com/
+  React Docs:               https://react.dev/
+  Vite Docs:                https://vite.dev/
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Last Updated: 2024
+Ready to generate amazing theses! 🎓
