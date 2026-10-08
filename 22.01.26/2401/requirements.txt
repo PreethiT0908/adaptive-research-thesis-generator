@@ -3,6 +3,7 @@ uvicorn
 streamlit
 python-dotenv
 groq
+openai
 langgraph
 langchain
 langchain-groq
