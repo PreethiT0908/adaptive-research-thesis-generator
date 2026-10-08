@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+streamlit
+python-dotenv
+groq
+langgraph
+langchain
+langchain-groq
+langchain-community
+faiss-cpu
+pypdf
+requests
+beautifulsoup4
+reportlab
+python-docx
+pydantic
+python-multipart
