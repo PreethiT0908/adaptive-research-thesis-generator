@@ -1,0 +1,1 @@
+# adaptive-research-thesis-generator
